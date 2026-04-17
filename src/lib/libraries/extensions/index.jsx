@@ -169,7 +169,7 @@ const IsLiveTests = urlParams.has('livetests');
 const menuItems = [
     {
  
-        extensionId: 'pen',
+        extensionId: 'https://turbowarp-pen-extension-demo--natunay.on.websim.com/pen-extension.js',
         iconURL: penIconURL,
         insetIconURL: penInsetIconURL,
         tags: ['scratch', 'graphics'],
