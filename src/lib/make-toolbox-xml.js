@@ -30,13 +30,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
-        <block type="motion_moveupdownsteps">
-            <value name="STEPS">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
+
         <block type="motion_turnright">
             <value name="DEGREES">
                 <shadow type="math_number">
@@ -51,6 +45,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
+             <block type="motion_turnaround"/>
         ${blockSeparator}
         <block type="motion_goto">
             <value name="TO">
@@ -136,7 +131,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
-        <block type="motion_turnaround"/>
+
         ${blockSeparator}
         <block type="motion_changexby">
             <value name="DX">
@@ -840,6 +835,8 @@ const sensing = function (isInitialSetup, isStage, targetId) {
             </block>
         `}
         <block id="answer" type="sensing_answer"/>
+                ${blockSeparator}
+                <block type="sensing_loud"/>
         <block type="sensing_thing_is_text">
             <value name="TEXT1">
                 <shadow type="text">
@@ -892,10 +889,11 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         `}
         ${blockSeparator}
         <block id="loudness" type="sensing_loudness"/>
-        <block id="loud" type="sensing_loud"/>
+
+        <block id="timer" type="sensing_timer"/>
         ${blockSeparator}
         <block type="sensing_resettimer"/>
-        <block id="timer" type="sensing_timer"/>
+
         ${blockSeparator}
         <block type="sensing_set_of">
             <value name="OBJECT">
