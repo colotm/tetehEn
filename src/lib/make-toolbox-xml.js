@@ -815,12 +815,11 @@ const operators = function (isInitialSetup) {
     
         <block type="operator_and"/>
         <block type="operator_or"/>
-                    <block type="operator_not"/>
+        <block type="operator_nor"/>
         <block type="operator_not"/>
         ${blockSeparator}
         ${isInitialSetup ? '' : `
             <block type="operator_newLine"></block>
-            <block type="operator_tabCharacter"></block>
             ${blockSeparator}
             <block type="operator_join">
                 <value name="STRING1">
