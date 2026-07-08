@@ -23,7 +23,7 @@ const menuItems = [
         extensionId: 'https://turbowarp-pen-extension-demo--natunay.on.websim.com/pen-extension.js',
         iconURL: penIconURL,
         insetIconURL: penInsetIconURL,
-        tags: ['scratch', 'graphics'],
+        tags: ['graphics'],
         description: (
             <FormattedMessage
                 defaultMessage="An drawing the pencils to blocks."
